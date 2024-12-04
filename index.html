@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Login E-commerce</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <div class="background_detail">
+
+    </div>
+
+    <div class="main" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="left">
+            <img class="img_icon" src="assets/imgs/icon.png" alt="">
+        </div>
+
+        <div>
+
+            <form action="/enviar" method="post">
+
+                <h1 class="title">LOG-IN</h1>
+
+                <label class="label" for="nome">Nome:</label>
+                <input class="input" type="text" name="nome" id="nome" placeholder="Digite o seu nome" required> <br>
+
+                <label class="label" for="email">E-mail:</label>
+                <input class="input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required> <br>
+
+                <label class="label" for="senha">Senha:</label>
+                <input class="input" type="password" name="senha" id="senha" placeholder="Digite sua senha"> <br>
+
+                <div class="newsletter">
+                    <input type="checkbox" name="newsletter" id="newsletter" value="sim">
+                    <label class="label" for="newsletter">Assinar a Newsletter</label>
+                    <br>
+                </div>
+
+                <button type="submit" class="submit">Enviar</button><br>
+
+                <div class="bottom_links">
+                    <a href="">Esqueci a Senha</a>
+
+                    <a href="">Não possuo cadastro</a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

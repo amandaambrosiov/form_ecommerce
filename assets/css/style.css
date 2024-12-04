@@ -1,0 +1,138 @@
+:root {
+    --bege: #f0dda6;
+    --verde: #9ed99e;
+    --laranja: #eb6427;
+    --rosa: #eb214e;
+    --preto: #1a1623;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--preto);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 5rem auto 0 auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+}
+
+.img_icon {
+    width: fit-content;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    color: var(--rosa);
+}
+
+.background_detail {
+    background-color: var(--rosa);
+    /* Cor de fundo */
+    height: 200px;
+    /* Tamanho da div de fundo */
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* A div estará posicionada no fundo */
+    z-index: 0;
+    /* Z-index menor para ficar atrás */
+}
+
+form {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #f1e5bf;
+    padding: 2rem;
+}
+
+.label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--rosa);
+    font-weight: 700;
+}
+
+.input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 8px 0;
+    background-color: white;
+}
+
+.input::placeholder {
+    color: var(--rosa);
+}
+
+.input:focus {
+    border: none;
+    outline: none;
+    background-color: var(--rosa);
+}
+
+.input:focus::placeholder {
+    color: white;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.newsletter input {
+    margin-right: 10px;
+}
+
+.submit {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background: rgb(235, 33, 78);
+    background: linear-gradient(90deg, rgba(235, 33, 78, 1) 0%, rgba(231, 120, 144, 1) 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.bottom_links {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.bottom_links a {
+    text-decoration: none;
+    color: var(--laranja);
+}

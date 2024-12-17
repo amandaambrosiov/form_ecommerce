@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="assets/imgs/form_img.png" type="image/x-icon">
+
+    <title>Login E-commerce</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <div class="background_detail">
+
+    </div>
+
+    <div class="main cadastro" data-aos="zoom-in" data-aos-duration="1200">
+
+        <div>
+
+            <form action="/enviar" method="post">
+
+                <h1 class="title">CADASTRO</h1>
+
+                <label class="label" for="nome">Nome</label>
+                <input class="input" type="text" name="nome" id="nome" placeholder="Digite o seu nome" required> <br>
+
+                <label class="label" for="email">E-mail</label>
+                <input class="input" type="email" name="email" id="email" placeholder="Digite seu e-mail" required> <br>
+
+                <label class="label">Selecione sua faixa etária</label>
+                <div class="radio-group">
+                    <input type="radio" id="faixa1" name="faixa_etaria[]" value="18">
+                    <label for="faixa1">Menos de 18 anos</label><br>
+
+                    <input type="radio" id="faixa2" name="faixa_etaria[]" value="18-25">
+                    <label for="faixa1">18-25 anos</label><br>
+                    
+                    <input type="radio" id="faixa3" name="faixa_etaria[]" value="26-35">
+                    <label for="faixa2">26-35 anos</label><br>
+                    
+                    <input type="radio" id="faixa4" name="faixa_etaria[]" value="36-50">
+                    <label for="faixa3">36-50 anos</label><br>
+                    
+                    <input type="radio" id="faixa5" name="faixa_etaria[]" value="51+">
+                    <label for="faixa4">51 anos ou mais</label>
+                </div>
+
+                <label class="label" for="senha">Senha</label>
+                <input class="input" type="password" name="senha" id="senha" placeholder="Digite sua senha" required> <br>
+
+                <label class="label" for="confirma-senha">Confirme sua Senha</label>
+                <input class="input" type="password" id="confirma-senha" name="confirma_senha" placeholder="Confirme sua senha" required>
+
+                <button type="submit" class="submit">CADASTRAR</button><br>
+
+                <div class="bottom_links">
+                    <a href="index.html">Voltar para página de log-in</a>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="left">
+            <img class="img_icon" src="assets/imgs/form_img.png" alt="">
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
